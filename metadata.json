@@ -1,0 +1,5 @@
+{
+  "name": "财务模型 Designer",
+  "description": "A multi-dimensional model designer for ClickHouse with Python SDK scripting support.",
+  "requestFramePermissions": []
+}
