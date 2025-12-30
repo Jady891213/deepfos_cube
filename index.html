@@ -1,29 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DeepModel Designer</title>
-    <!-- 1. 消除 favicon 404 报错 -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📦</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      ::-webkit-scrollbar { width: 6px; height: 6px; }
-      ::-webkit-scrollbar-track { background: #f1f1f1; }
-      ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
-      ::-webkit-scrollbar-thumb:hover { background: #999; }
-      
-      /* 简单的进场动画 */
-      .animate-in {
-        animation: fadeIn 0.3s ease-out;
+      /* Custom scrollbar for better aesthetics in lists */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
       }
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(4px); }
-        to { opacity: 1; transform: translateY(0); }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #999;
       }
     </style>
-    
     <!-- Blockly Scripts -->
     <script src="https://unpkg.com/blockly/blockly_compressed.js"></script>
     <script src="https://unpkg.com/blockly/blocks_compressed.js"></script>
@@ -43,7 +41,5 @@
 </head>
   <body class="bg-gray-50 text-gray-800 antialiased font-sans overflow-hidden">
     <div id="root"></div>
-    <!-- 2. 加载程序入口 -->
-    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
