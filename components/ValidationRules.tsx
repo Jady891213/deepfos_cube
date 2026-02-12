@@ -152,7 +152,7 @@ const ValidationRules: React.FC = () => {
                             
                             <div className="mt-4 flex items-center justify-center text-xs text-gray-400 gap-2">
                                 <InfoIcon />
-                                <span>The system will automatically calculate <code>Diff = LHS - RHS</code>. If <code>ABS(Diff) > Tolerance</code>, the Validation Account will be populated.</span>
+                                <span>The system will automatically calculate <code>{`Diff = LHS - RHS`}</code>. If <code>{`ABS(Diff) > Tolerance`}</code>, the Validation Account will be populated.</span>
                             </div>
                         </div>
 
