@@ -91,7 +91,7 @@ const AdvancedSettings: React.FC = () => {
                                 <label className="block text-sm font-bold text-gray-700">Null Value Display</label>
                             </div>
                              <div className="relative">
-                                <input type="text" value="-" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-center font-bold" />
+                                <input type="text" defaultValue="-" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-center font-bold" />
                                 <span className="absolute right-3 top-2.5 text-xs text-gray-400">Preview</span>
                              </div>
                         </div>

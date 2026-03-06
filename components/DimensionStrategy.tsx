@@ -85,11 +85,11 @@ const DimensionStrategy: React.FC = () => {
                                     <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 border-b border-gray-100 pb-2">Basic Info</h4>
                                     <div>
                                         <label className="block text-xs font-bold text-gray-700 mb-1.5 uppercase tracking-wider">Strategy Code <span className="text-red-500">*</span></label>
-                                        <input type="text" value={selected.code} className="w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 focus:ring-blue-500 focus:border-blue-500" />
+                                        <input type="text" defaultValue={selected.code} className="w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 focus:ring-blue-500 focus:border-blue-500" />
                                     </div>
                                     <div>
                                         <label className="block text-xs font-bold text-gray-700 mb-1.5 uppercase tracking-wider">Strategy Name <span className="text-red-500">*</span></label>
-                                        <input type="text" value={selected.name} className="w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 focus:ring-blue-500 focus:border-blue-500" />
+                                        <input type="text" defaultValue={selected.name} className="w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 focus:ring-blue-500 focus:border-blue-500" />
                                     </div>
                                 </div>
 
@@ -100,7 +100,7 @@ const DimensionStrategy: React.FC = () => {
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             <label className={`flex items-start gap-3 p-4 rounded-xl border cursor-pointer transition-all ${selected.type === 'DimensionUD' ? 'bg-blue-50 border-blue-200 ring-1 ring-blue-300' : 'bg-white border-gray-200 hover:border-gray-300'}`}>
                                                 <div className="mt-0.5">
-                                                     <input type="radio" checked={selected.type === 'DimensionUD'} name="stype" className="w-4 h-4 text-blue-600 focus:ring-blue-500" />
+                                                     <input type="radio" defaultChecked={selected.type === 'DimensionUD'} name="stype" className="w-4 h-4 text-blue-600 focus:ring-blue-500" />
                                                 </div>
                                                 <div>
                                                     <span className="block text-sm font-bold text-gray-900">Dimension Attribute (UD)</span>
@@ -109,7 +109,7 @@ const DimensionStrategy: React.FC = () => {
                                             </label>
                                             <label className={`flex items-start gap-3 p-4 rounded-xl border cursor-pointer transition-all ${selected.type === 'DataControl' ? 'bg-blue-50 border-blue-200 ring-1 ring-blue-300' : 'bg-white border-gray-200 hover:border-gray-300'}`}>
                                                 <div className="mt-0.5">
-                                                    <input type="radio" checked={selected.type === 'DataControl'} name="stype" className="w-4 h-4 text-blue-600 focus:ring-blue-500" />
+                                                    <input type="radio" defaultChecked={selected.type === 'DataControl'} name="stype" className="w-4 h-4 text-blue-600 focus:ring-blue-500" />
                                                 </div>
                                                 <div>
                                                     <span className="block text-sm font-bold text-gray-900">Data Permission Control</span>

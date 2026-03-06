@@ -93,11 +93,11 @@ const ValidationRules: React.FC = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                                 <div className="col-span-1">
                                     <label className="block text-xs font-semibold text-gray-500 mb-1.5 uppercase">Rule Code</label>
-                                    <input type="text" value={selected.code} className="w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5" />
+                                    <input type="text" defaultValue={selected.code} className="w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5" />
                                 </div>
                                 <div className="col-span-2">
                                     <label className="block text-xs font-semibold text-gray-500 mb-1.5 uppercase">Rule Name</label>
-                                    <input type="text" value={selected.name} className="w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5" />
+                                    <input type="text" defaultValue={selected.name} className="w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5" />
                                 </div>
                                 <div className="col-span-1">
                                     <label className="block text-xs font-semibold text-gray-500 mb-1.5 uppercase">Target Account</label>
@@ -118,7 +118,7 @@ const ValidationRules: React.FC = () => {
                                 </h3>
                                 <div className="flex items-center gap-2 bg-gray-100 rounded-lg px-3 py-1.5 border border-gray-200">
                                     <span className="text-xs font-semibold text-gray-500">Tolerance:</span>
-                                    <input type="number" value={selected.tolerance} className="w-16 bg-transparent text-sm font-mono text-gray-900 focus:outline-none text-right" />
+                                    <input type="number" defaultValue={selected.tolerance} className="w-16 bg-transparent text-sm font-mono text-gray-900 focus:outline-none text-right" />
                                 </div>
                             </div>
                             
@@ -187,7 +187,7 @@ const ValidationRules: React.FC = () => {
                                                     <div className="flex items-center gap-2">
                                                         <input 
                                                             type="text" 
-                                                            value={selected.scope[dim.toLowerCase()] || 'All Base Members'}
+                                                            defaultValue={selected.scope[dim.toLowerCase()] || 'All Base Members'}
                                                             className="bg-white border border-gray-300 text-gray-700 text-xs rounded block w-full p-1.5 font-mono"
                                                         />
                                                         <button className="text-gray-400 hover:text-blue-600"><Sliders className="w-3 h-3" /></button>
